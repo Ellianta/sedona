@@ -1,0 +1,35 @@
+.main-nav{
+  width: 100%;
+  position: absolute;
+  height: 56px;
+  background: white;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+   &__left{
+     display: flex;
+     width: 46%;
+   }
+   &__right{
+     display: flex;
+     width: 46%;
+   }
+   &__link{
+     width: 50%;
+     .link();
+     padding: 15px 0;
+     .nav-color();
+      &--right{
+        text-align: right;
+      }
+      &--active{
+        .nav-active();
+      }
+   }
+   &__image{
+     position: absolute;
+     left: 50%;
+     margin-left: -69px;
+     top: 0;
+   }
+}

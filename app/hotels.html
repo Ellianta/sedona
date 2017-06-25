@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="css/normalize.css">
+  <link type="text/css" rel="stylesheet" href="css/style-min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <title>Sedona</title>
+</head>
+<body>
+  <header class="page-header page-header--inner">
+   <nav class="main-nav">
+     <div class="main-nav__left">
+     <a class="main-nav__link" href="index.html">Информация</a>
+     <a class="main-nav__link" href="#">Фото и видео</a>
+     </div>
+     <img class="main-nav__image" src="img/bg-nav.png" width="138" height="70" alt="Логотип">
+     <div class="main-nav__right">
+     <a class="main-nav__link  main-nav__link--right" href="#">Карта штата</a>
+     <a class="main-nav__link  main-nav__link--active  main-nav__link--right" href="hotels.html">Гостиницы</a>
+     </div>
+   </nav>
+
+   <form class="select" method="get">
+     <fieldset class="select__options">
+       <legend class="select__title">Инфраструктура:</legend>
+       <input class="select__check" type="checkbox"  id="check1" checked>
+       <label class="select__option" for="check1">Бассейн</label>
+       <input class="select__check" type="checkbox" id="check2">
+       <label class="select__option" for="check2">Парковка</label>
+       <input class="select__check" type="checkbox" id="check3">
+       <label class="select__option" for="check3">wi-fi</label>
+     </fieldset>
+     <fieldset class="select__options">
+       <legend class="select__title">Тип жилья:</legend>
+       <input class="select__check" type="checkbox" id="check4" checked>
+       <label class="select__option" for="check4">Гостиница</label>
+       <input class="select__check" type="checkbox"  id="check5" checked>
+       <label class="select__option" for="check5">Мотель</label>
+       <input class="select__check" type="checkbox" id="check6" checked>
+       <label class="select__option" for="check6">Апартаменты</label>
+     </fieldset>
+     <fieldset class="select__price">
+       <legend class="select__price-title">Стоимость в сутки (р):</legend>
+       <div class="select__price-inner">
+         <label class="select__price-label">от<input class="select__price-min" type="text" name="min-price" value="0"></label>
+         <label class="select__price-label">до<input class="select__price-max" type="text" name="max-price" value="3000"></label>
+       </div>
+       <div class="select__price-scale">
+         <div class="select__price-bar"></div>
+         <div class="select__price-bar  select__price-bar--white"></div>
+         <div class="select__price-toggle  select__price-toggle--min"></div>
+         <div class="select__price-toggle  select__price-toggle--max"></div>
+       </div>
+       <button class="select__button" type="submit" name="submit">Показать</button>
+     </fieldset>
+   </form>
+  </header>
+
+  <main class="inner-page">
+  <div class="sort">
+    <b class="sort__title">Найдено: <span>3</span></b>
+    <ul class="sort__list">
+      <li class="sort__item  sort__item--title">Сортировка:</li>
+      <li class="sort__item  sort__item--active">По цене</li>
+      <li class="sort__item">По типу</li>
+      <li class="sort__item">По рейтингу</li>
+    </ul>
+    <ul class="sort__toggles">
+      <li class="sort__toggle  sort__toggle--up"></li>
+      <li class="sort__toggle  sort__toggle--active  sort__toggle--down"></li>
+    </ul>
+  </div>
+  <article class="inner-page__hotels">
+    <section class="hotel">
+      <img class="hotel__image" src="img/hotels/hotel1.jpg" width="135" height="90"  alt="Отель">
+      <div class="hotel__info">
+        <h2 class="hotel__title"><a class="hotel__title-link" href="#">Amara Resort &amp; Spa</a></h2>
+        <div class="hotel__type">
+          Гостиница
+          <a href="#" class="hotel__link">Подробнее</a>
+        </div>
+        <div class="hotel__price">
+          от 3500 р.
+          <a href="#" class="hotel__link  hotel__link--brown">Забронировать</a>
+        </div>
+      </div>
+      <div class="hotel__rating">
+        <div class="hotel__stars">
+          <span class="hotel__star"></span>
+          <span class="hotel__star"></span>
+          <span class="hotel__star"></span>
+          <span class="hotel__star"></span>
+        </div>
+        <div class="hotel__rating-number">
+          Рейтинг: <span>8.5</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel">
+      <img class="hotel__image" src="img/hotels/hotel2.jpg" width="135" height="90"  alt="Отель">
+      <div class="hotel__info">
+        <h2 class="hotel__title"><a class="hotel__title-link" href="#">Desert Quail Inn</a></h2>
+        <div class="hotel__type">
+          Мотель
+          <a href="#" class="hotel__link">Подробнее</a>
+        </div>
+        <div class="hotel__price">
+          от 2000 р.
+          <a href="#" class="hotel__link  hotel__link--brown">Забронировать</a>
+        </div>
+      </div>
+      <div class="hotel__rating">
+        <div class="hotel__stars">
+          <span class="hotel__star"></span>
+          <span class="hotel__star"></span>
+        </div>
+        <div class="hotel__rating-number">
+          Рейтинг: <span>8.9</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel">
+      <img class="hotel__image" src="img/hotels/hotel3.jpg" width="135" height="90"  alt="Отель">
+      <div class="hotel__info">
+        <h2 class="hotel__title"><a class="hotel__title-link" href="#">Villas at Poco Diablo</a></h2>
+        <div class="hotel__type">
+          Апартаменты
+          <a href="#" class="hotel__link">Подробнее</a>
+        </div>
+        <div class="hotel__price">
+          от 4000 р.
+          <a href="#" class="hotel__link  hotel__link--brown">Забронировать</a>
+        </div>
+      </div>
+      <div class="hotel__rating">
+        <div class="hotel__stars">
+          <span class="hotel__star"></span>
+          <span class="hotel__star"></span>
+          <span class="hotel__star"></span>
+        </div>
+        <div class="hotel__rating-number">
+          Рейтинг: <span>9.2</span>
+        </div>
+      </div>
+    </section>
+  </article>
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__hashtag">
+      <a class="page-footer__hash-link">#visitsedona</a>
+    </section>
+    <section class="page-footer__social">
+      <a class="page-footer__link  page-footer__link--twitter" href="#">twitter
+      </a>
+      <a class="page-footer__link  page-footer__link--facebook" href="#">facebook</a>
+      <a class="page-footer__link  page-footer__link--youtube" href="#">youtube</a>
+    </section>
+    <section class="page-footer__developed">
+      website by
+      <a class="page-footer__logo" href="https://htmlacademy.ru/">
+        <img  src="img/logo-html.svg" alt="HTML_Academy" width="113" height="39">
+      </a>
+    </section>
+  </footer>
+  </body>
+  </html>

@@ -1,0 +1,77 @@
+.link(){
+  display: block;
+  font-family: @font;
+  color: black;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  
+}
+.title{
+  font-family: @font;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text{
+  font-family: @font;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.bg-blue{
+  background-color: @bg-blue;
+  &:hover{
+    background-color: @bg-blue-hover;
+    transition: background-color 1s ease;
+  }
+  &:focus{
+    background-color: @bg-blue-focus;
+    color: rgba(255,255,255,0.5);
+  }
+}
+.bg-brown{
+  background-color: @bg-brown;
+  &:hover{
+    background-color: @bg-brown-hover;
+    transition: background-color 1s ease;
+  }
+  &:active{
+    background-color: @bg-brown-focus;
+    color: rgba(255,255,255,0.5);
+  }
+}
+.nav-color{
+  color: @color;
+  &:hover{
+    color: @bg-blue;
+    transition: color 1s ease;
+  }
+  &:active{
+    color: @color-gray;
+  }
+}
+.nav-active{
+  color: @bg-brown;
+  &:hover{
+   color: @bg-brown-hover;
+   transition: color 1s ease;
+  }
+  &:active{
+    color: rgba(118,99,87,0.4);
+  }
+}
+.input-color{
+  color: @color-gray;
+  &:hover{
+    color: @color;
+    transition: color 1s ease;
+  }
+  &:focus{
+    color: @bg-blue;
+  }
+}

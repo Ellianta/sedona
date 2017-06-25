@@ -1,0 +1,97 @@
+.sort{
+  height: 85px;
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: @color;
+   &__title{
+     width: 165px;
+     .title();
+     line-height: 26px;
+   }
+   &__list{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content: flex-start;
+     font-family: inherit;
+     font-size: 12px;
+     line-height: 18px;
+     text-transform: uppercase;
+   }
+   &__item{
+     color: @color-gray;
+     margin-right: 30px;
+     text-decoration: underline;
+     text-decoration-color: @bg-blue;
+     text-decoration-style: dotted;
+     cursor: pointer;
+     &:last-child{
+       margin-right: 0;
+     }
+     &--title{
+       color: @color;
+       margin-right: 40px;
+       text-decoration: none;
+     }
+     &--active{
+       color: @bg-blue;
+       text-decoration: none;
+     }
+     &:not(:first-child):hover{
+       color: @bg-blue;
+       text-decoration: underline;
+       text-decoration-color: @bg-blue;
+       text-decoration-style: dotted;
+     }
+     &:active{
+       color: @color;
+       text-decoration: none;
+     }
+   }
+   &__toggles{
+     margin: 0;
+     margin-left: auto;
+     width: 36px;
+     height: 13px;
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: space-between;
+   }
+   &__toggle{
+     height: 100%;
+     width: 18px;
+     position: relative;
+     cursor: pointer;
+      &::before{
+        content: "\25b2";
+        position: absolute;
+        font-family: "symbols-sedona";
+        font-size: 30px;
+        color: @color-gray;
+        left: 0;
+        top: -5px;
+      }
+      &--down{
+        &::before{
+            content: "\25bc";
+            left: 5px;
+            top: -9px;
+        }
+      }
+      &--active::before{
+        color: @bg-blue;
+      }
+      &:hover::before{
+        color: @color;
+      }
+      &:active::before{
+        color: @bg-blue;
+      }
+   }
+
+}

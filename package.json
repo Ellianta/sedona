@@ -1,0 +1,36 @@
+{
+  "name": "sedona",
+  "version": "1.0.0",
+  "description": "sedona",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellianta/sedonao"
+  },
+  "author": "Ellianta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellianta/sedonaissues"
+  },
+  "homepage": "https://github.com/Ellianta/sedona#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts":{
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  }
+}

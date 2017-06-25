@@ -1,0 +1,96 @@
+.hotel{
+  width: 100%;
+  padding: 0 6%;
+  height: 152px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #f6f6f6;
+   &:first-child{
+     border-top: 1px solid #f6f6f6;
+   }
+   &__image{
+     margin-right: 30px;
+   }
+   &__info{
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     align-content: space-between;
+     width: 320px;
+     height: 90px;
+   }
+   &__title{
+     margin: 0;
+     padding: 0;
+     .title();
+     line-height: 18px;
+     width: 100%;
+   }
+   &__title-link{
+     text-decoration: none;
+     .nav-color();
+   }
+   &__type{
+     .text();
+     color: @color-text;
+     width: 110px;
+     margin-right: 5px;
+   }
+   &__price{
+     .text();
+     color: @color-text;
+     width: 145px;
+   }
+   &__link{
+     width: 100%;
+     height: 27px;
+     .link();
+     text-align: center;
+     color: @color-light;
+     .bg-blue();
+     margin-top: 15px;
+      &--brown{
+        .bg-brown();
+      }
+   }
+   &__rating{
+     margin-left: auto;
+     height: 90px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-end;
+   }
+   &__rating-number{
+     width: 110px;
+     height: 27px;
+     background-color: @bg-input;
+     .text();
+     padding: 3px;
+     text-align: center;
+   }
+   &__stars{
+     width: 120px;
+     height: 20px;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+   }
+   &__star{
+     width: 24px;
+     height: 100%;
+     position: relative;
+      &::before{
+        content: "\2605";
+        position: absolute;
+        font-family: "symbols-sedona";
+        color: @bg-blue;
+        font-size: 20px;
+        top: -3px;
+        right: 0;
+      }
+   }
+
+}

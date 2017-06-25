@@ -1,0 +1,38 @@
+.promo-light{
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 58px;
+  padding-bottom: 83px;
+  &__block{
+    width: 33%;
+    text-align: center;
+    position: relative;
+    padding: 103px 4% 0;
+    background: white url("../img/house.png") no-repeat 50% 0;
+    &--burger{
+      background: white url("../img/burger.png") no-repeat 50% 3px;
+    }
+    &--gift{
+      background: white url("../img/gift.png") no-repeat 50% 0;
+    }
+  }
+  &__image{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+  &__title{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    .title();
+  }
+  &__description{
+    padding: 0;
+    margin: 0;
+    .text();
+  }
+}

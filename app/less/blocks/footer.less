@@ -1,0 +1,67 @@
+.page-footer{
+  min-height: 120px;
+  width: 100%;
+  background-color: @color-light;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__hashtag{
+    width: 33%;
+    text-align: center;
+    .title();
+    line-height: 26px;
+  }
+  &__hash-link{
+    display: block;
+    text-decoration: none;
+    padding: 45px 0;
+  }
+  &__social{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  38px 0;
+  }
+  &__link{
+    font-size: 0;
+    width: 46px;
+    height: 46px;
+    .bg-blue();
+    position: relative;
+     &::after{
+       content: "\74";
+       position: absolute;
+       font-family: "symbols-sedona";
+       top: 13px;
+       left: 14px;
+       color: white;
+       font-size: 18px;
+     }
+     &:focus::after{
+       color: rgba(255,255,255,0.5);
+     }
+     &--facebook::after{
+       content: "f";
+       left: 16px;
+     }
+     &--youtube::after{
+       content: "\f39e";
+       left: 16px;
+     }
+  }
+  &__link:not(:last-of-type){
+    margin-right: 7px;
+  }
+  &__developed{
+    width: 33%;
+    .text();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 37px;
+  }
+  &__logo{
+    margin-left: 6px;
+  }
+}
